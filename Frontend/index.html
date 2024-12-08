@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Generator</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Content Generator</h1>
+            <p>Generate custom content based on current trends and specified styles.</p>
+        </header>
+
+        <section class="input-section">
+            <label for="user-input">Enter your prompt:</label>
+            <textarea id="user-input" rows="4" placeholder="e.g., Create a LinkedIn post about AI trends today..."></textarea>
+            
+            <label for="content-options">Select content type and tone:</label>
+            <select id="content-options">
+                <option value="text-formal">Text - Formal</option>
+                <option value="text-informal">Text - Informal</option>
+                <option value="image-formal">Image - Formal</option>
+                <option value="image-informal">Image - Informal</option>
+                <option value="video-formal">Video - Formal</option>
+                <option value="video-informal">Video - Informal</option>
+                <option value="meme-formal">Meme - Formal</option>
+                <option value="meme-informal">Meme - Informal</option>
+            </select>
+
+            <button id="generate-button">Generate</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Generated Content:</h2>
+            <div id="output-container">
+                <!-- Generated content will be displayed here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
